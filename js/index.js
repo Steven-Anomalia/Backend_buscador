@@ -1,3 +1,8 @@
+$(function (){
+
+    var ciudades = $("#selectCiudad");
+    var tipos = $("#selectTipo");
+    var resultado = $("#resultado");
 /*
   Creación de una función personalizada para jQuery que detecta cuando se detiene el scroll en la página
 */
