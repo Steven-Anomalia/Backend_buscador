@@ -1,4 +1,22 @@
 <?php
+/*----------------------------*/
+if( isset($_POST['tipo']) ) {
+    switch ($_POST['tipo']){
+        case 'ciudades':
+            getCiudades();
+            break;
+        case 'tipos':
+            getTipos();
+            break;
+        case 'todos':
+            header('Content-type: application/json; charset=utf-8');
+            echo json_encode( getData('../data-1.json'),JSON_FORCE_OBJECT);
+            break;
+    }
+} else {
+    die("Solicitud no válida.");
+}
+/*--------------------------------*/
 
 function getCiudades(){
     $items = getData('../data-1.json');
