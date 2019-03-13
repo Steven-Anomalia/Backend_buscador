@@ -103,7 +103,7 @@ function playVideoOnScroll(){
                 $.each(data, function (id,value){
                    var insertar=
                    "<div class='card itemMostrado'>" +
-                   "<div class='card-image'  style='width:50%;'><img src='img/home.jpg'/></div>" +
+                   "<div class='card-image'  style='width:70%;'><img src='img/home.jpg'/></div>" +
                        "<div class='card-stacked'>" +
                        "<div class='card-content'>" +
                        "<div><strong>Direccion: </strong>"+ value['Direccion'] +"</div>" +
@@ -155,7 +155,7 @@ function playVideoOnScroll(){
                 $.each(data, function (id,value){
                    var insertar=
                     "<div class='card itemMostrado'>" +
-                       "<div class='card-image'  style='width:50%;'><img src='img/home.jpg'/></div>" +
+                       "<div class='card-image'  style='width:70%;'><img src='img/home.jpg'/></div>" +
                        "<div class='card-stacked'>" +
                        "<div class='card-content'>" +
                        "<div><strong>Direccion: </strong>"+ value['Direccion'] +"</div>" +
