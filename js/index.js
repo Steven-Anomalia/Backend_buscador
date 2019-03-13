@@ -54,7 +54,6 @@ function playVideoOnScroll(){
 }
 
  function cargarCiudades(){
-
         $.ajax({
             url: 'php/data.php',
             type: 'POST',
@@ -75,7 +74,6 @@ function playVideoOnScroll(){
     }
 
     function cargarTipos(){
-
         $.ajax({
             url: 'php/data.php',
             type: 'POST',
@@ -97,8 +95,7 @@ function playVideoOnScroll(){
 
     $("#mostrarTodos").click(function () {
        resultado.find('div').remove();
-
-        $.ajax({
+         $.ajax({
             url: 'php/data.php',
             type: 'POST',
             data: 'tipo=todos',
@@ -134,8 +131,7 @@ function playVideoOnScroll(){
 
     $("#formulario").submit(function(event)
     {
-
-        event.preventDefault();
+       event.preventDefault();
         if (request) {
             request.abort();
         }

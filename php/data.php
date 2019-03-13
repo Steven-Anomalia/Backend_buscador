@@ -17,6 +17,13 @@ if( isset($_POST['tipo']) ) {
     die("Solicitud no válida.");
 }
 /*--------------------------------*/
+function getData($dir){
+    $data_file = fopen($dir,"r");
+    $data_readed = fread($data_file, filesize($dir));
+    $data = json_decode($data_readed, true);
+    fclose($data_file);
+    return $data;
+}
 
 function getCiudades(){
     $items = getData('../data-1.json');
@@ -45,13 +52,7 @@ function getTipos(){
 }
 
 
-function getData($dir){
-    $data_file = fopen($dir,"r");
-    $data_readed = fread($data_file, filesize($dir));
-    $data = json_decode($data_readed, true);
-    fclose($data_file);
-    return $data;
-}
+
 
 
 ?>
